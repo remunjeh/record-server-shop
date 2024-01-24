@@ -24,6 +24,7 @@ const createSendToken = (res, status, user) => {
     ),
     secure: true, // Will still work over http if it is a localhost
     httpOnly: true,
+    sameSite: "None"
   };
 
   res.cookie("jwtToken", jwtToken, cookieOptions);
@@ -115,7 +116,7 @@ export const getMe = (req, res, next) => {
     // user.password = undefined;
 
     res.status(200).json({
-      sucess: true,
+      success: true,
       user,
       isAuthenticated,
       // jwtToken: cookies["jwtToken"],

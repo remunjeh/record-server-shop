@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed-records": "node seed/seed_db_records.js",
-    "seed-users": "node seed/seed_db_users.js"
+    "seed-users": "node seed/seed_db_users.js",
+    "start": "node.app.js"
   },
   "author": "Zakaria hamdan",
   "license": "ISC",
@@ -21,7 +22,7 @@
     "express-validator": "^7.0.1",
     "http-errors": "^2.0.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.0.2",
+    "mongoose": "^8.1.0",
     "multer": "^1.4.5-lts.1",
     "sharp": "^0.33.2"
   }
